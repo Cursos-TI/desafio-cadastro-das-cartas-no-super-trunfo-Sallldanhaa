@@ -53,7 +53,7 @@ int main() {
     printf ("Informe a quantidade de pontos turísticos da cidade: \n");
          scanf ("%d", &turistico1);
 
-printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.2f\n PIB: %.2f\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, turistico1);
+printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, turistico1);
 
  printf ("___ AGORA PREENCHA OS DADOS DA CARTA 2 ___\n");
      
@@ -80,7 +80,7 @@ printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n Popul
     printf ("Informe a quantidade de pontos turísticos da cidade: \n");
          scanf ("%d", &turistico2);
 
-printf ("___CARTA 2___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.2f\n PIB: %.2f\n Pontos Turísticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, PIB2, turistico2);
+printf ("___CARTA 2___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, PIB2, turistico2);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -88,9 +88,9 @@ printf ("___CARTA 2___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n Popul
 
 printf ("AS CARTAS FORAM ORGANIZADAS DA SEGUINTE FORMA: \n");
 
-printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.2f\n PIB: %.2f\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, turistico1);
+printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, turistico1);
 
-printf ("___CARTA 2___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.2f\n PIB: %.2f\n Pontos Turísticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, PIB2, turistico2);
+printf ("___CARTA 2___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, PIB2, turistico2);
 
 
     return 0;
