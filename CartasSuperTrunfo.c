@@ -12,7 +12,7 @@ int main() {
     // essas variáveis são sobre a carta 1
 
     int turistico1, populacao1;
-    float area1, PIB1;
+    float area1, PIB1, densidade1, capta1;
     char estado1;
     char codigo1[4]; 
     char cidade1[50];
@@ -20,7 +20,7 @@ int main() {
     // Implementação dos dados da segunda carta 
 
     int turistico2, populacao2;
-    float area2, PIB2;
+    float area2, PIB2, densidade2, capta2;
     char estado2;
     char codigo2[4]; 
     char cidade2[50];
@@ -53,7 +53,14 @@ int main() {
     printf ("Informe a quantidade de pontos turísticos da cidade: \n");
          scanf ("%d", &turistico1);
 
-printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, turistico1);
+    printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, turistico1);
+
+            densidade1 = populacao1 / area1;
+            capta1 = PIB1 / populacao1;
+
+    printf ("Densidade demográfica: %.2f hab/km²\n", densidade1);
+    printf ("PIB per capita: %.2f\n\n", capta1);
+
 
  printf ("___ AGORA PREENCHA OS DADOS DA CARTA 2 ___\n");
      
@@ -80,6 +87,12 @@ printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n Popul
     printf ("Informe a quantidade de pontos turísticos da cidade: \n");
          scanf ("%d", &turistico2);
 
+            densidade2 = populacao2 / area2;
+            capta2 = PIB2 / populacao2;
+
+    printf ("Densidade demográfica: %.2f hab/km²\n", densidade2);
+    printf ("PIB per capita: %.2f\n", capta2);
+
 printf ("___CARTA 2___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, PIB2, turistico2);
 
     // Exibição dos Dados das Cartas:
@@ -90,8 +103,15 @@ printf ("AS CARTAS FORAM ORGANIZADAS DA SEGUINTE FORMA: \n");
 
 printf ("___CARTA 1___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, turistico1);
 
+    
+    printf ("Densidade demográfica: %.2f hab/km²\n", densidade1);
+    printf ("PIB per capita: %.2f\n\n", capta1);
+
+
 printf ("___CARTA 2___  \n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3f\n PIB: %.3f\n Pontos Turísticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, PIB2, turistico2);
 
+    printf ("Densidade demográfica: %.2f hab/km²\n", densidade2);
+    printf ("PIB per capita: %.2f\n", capta2);
 
     return 0;
 }
